@@ -1,1 +1,0 @@
-generate an openapi file from CUE
