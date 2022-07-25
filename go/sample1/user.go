@@ -13,6 +13,7 @@ type User struct {
 
 var ErrInvalidUser = errors.New("invalid user")
 
+// Gophers often define the validation like this.
 func (i *User) Validate() error {
 	if i.Age >= 200 {
 		return ErrInvalidUser
@@ -21,7 +22,7 @@ func (i *User) Validate() error {
 	return nil
 }
 
-// But, we can validate with cue!
+// But, we can validate it with cue as well!
 func (i *User) ValidateWithCUE() error {
 	return gocodec.Validate(i)
 }
