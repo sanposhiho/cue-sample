@@ -1,0 +1,1 @@
+generate a Go validation file from CUE
