@@ -1,8 +1,8 @@
-## generate ./sample2/cue_gen.go from ./sample2/user.cue
+./sample2/user.cue から ./sample2/cue_gen.go の生成
 
 ```shell
-# ./basic/sample2/generator/go/generate.go has the code to generate go code from CUE.
+# ./basic/sample2/generator/go/generate.go で、user.cue から cue_gen.go を生成
 go run ./sample2/generator/go/generate.go
-# run test
+# テストの実行
 go test ./sample2/...
 ```

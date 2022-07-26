@@ -1,6 +1,6 @@
 # Basic samples
 
-## generate yaml from CUE 
+## CUE から YAML を生成
 
 ```
 $ cue export --out yaml 
@@ -10,23 +10,21 @@ User:
   Is_activated: true
 ```
 
-## generate CUE from yaml
-
-generate .cue files from .yaml files.
+## YAML から CUE を生成
 
 ```
 $ cue import ./testdata/...  -f
 ```
 
-## validate yaml files with CUE 
+## YAML を CUE を用いてバリデーション
 
-**pass a valid yaml file**
+**バリデーション成功**
 
 ```
 $ cue vet . ./testdata/valid.yaml
 ```
 
-**pass an invalid yaml file**
+**バリデーション失敗**
 
 ```
 $ cue vet . ./testdata/invalid.yaml
