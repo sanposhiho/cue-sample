@@ -3,7 +3,7 @@ package user
 import (
 	"errors"
 
-	"cuelang.org/go/encoding/gocode/gocodec"
+	"cuelang.org/go/cuego"
 )
 
 type User struct {
@@ -24,5 +24,5 @@ func (i *User) Validate() error {
 
 // cueタグに書かれた制約をもとにしたバリデーションの実装例
 func (i *User) ValidateWithCUE() error {
-	return gocodec.Validate(i)
+	return cuego.Validate(i)
 }
