@@ -4,4 +4,8 @@
 
 ### Install CUE
 
+```sh
+go install cuelang.org/go/cmd/cue@v0.4.3
+```
+
 https://cuelang.org/docs/install/ を参考にしてください。
