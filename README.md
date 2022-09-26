@@ -1,6 +1,6 @@
-## CUE sample for "秘密" 
+## CUE sample for "CUEによるスキーマやバリデーションのポータビリティ(gihyo.jp)" 
 
-"(秘密)" のサンプルコード。
+[CUEによるスキーマやバリデーションのポータビリティ](https://gihyo.jp/article/2022/09/tsukinami-go-02) のサンプルコード。
 
 ### Install CUE
 
