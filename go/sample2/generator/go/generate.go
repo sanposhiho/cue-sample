@@ -1,14 +1,11 @@
 package main
 
 import (
-	"io/ioutil"
 	"os"
 	"path/filepath"
 
-	"cuelang.org/go/cue/load"
-
 	"cuelang.org/go/cue"
-
+	"cuelang.org/go/cue/load"
 	"cuelang.org/go/encoding/gocode"
 )
 
@@ -21,10 +18,6 @@ const (
 )
 
 func main() {
-	b, err := os.ReadFile(cueFilePath)
-	if err != nil {
-		panic(err)
-	}
 	cwd, err := os.Getwd()
 	if err != nil {
 		panic(err)
@@ -40,12 +33,12 @@ func main() {
 		panic(err)
 	}
 
-	b, err = gocode.Generate(dir, inst, nil)
+	b, err := gocode.Generate(dir, inst, nil)
 	if err != nil {
 		panic(err)
 	}
 
-	err = ioutil.WriteFile(destination, b, 0644)
+	err = io.WriteFile(destination, b, 0644)
 	if err != nil {
 		panic(err)
 	}
